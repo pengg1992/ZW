@@ -22,6 +22,51 @@ namespace ZW.Admin
 
             log.Info("网站己启动......");
         }
+        void Application_BeginRequest(object sender, EventArgs e)
+        {
+            string q = "<div style='position:fixed;top:0px;width:100%;height:100%;background-color:white;color:green;font-weight:bold;border-bottom:5px solid #999;'><br>您的提交带有不合法参数,谢谢合作!<br><br>了解更多请点击:<a href='http://www.kuiyu.net'>奎宇工作室</a></div>";
+
+            if (Request.Cookies != null)
+            {
+                if (ZW.Util.WebSafe.CookieData())
+                {
+                    Response.Write("您提交的Cookie数据有恶意字符！");
+                    Response.End();
+
+                }
+
+
+            }
+
+            if (Request.UrlReferrer != null)
+            {
+                if (ZW.Util.WebSafe.referer())
+                {
+                    Response.Write("您提交的Referrer数据有恶意字符！");
+                    Response.End();
+                }
+            }
+
+            if (Request.RequestType.ToUpper() == "POST")
+            {
+                if (ZW.Util.WebSafe.PostData())
+                {
+
+                    Response.Write("您提交的Post数据有恶意字符！");
+                    Response.End();
+                }
+            }
+            if (Request.RequestType.ToUpper() == "GET")
+            {
+                if (ZW.Util.WebSafe.GetData())
+                {
+                    Response.Write("您提交的Get数据有恶意字符！");
+                    Response.End();
+                }
+            }
+
+
+        }
         /// <summary>
         /// 捕获异常
         /// </summary>
