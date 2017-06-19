@@ -1,0 +1,14 @@
+﻿<configuration>
+  <system.web>
+  	<pages>
+		<controls>
+			<add tagPrefix="dav" namespace="DAValidation" assembly="DAValidation" />
+		</controls>
+	</pages>
+	<compilation>
+      <expressionBuilders>
+        <add expressionPrefix="Code" type="DAValidation.CodeExpressionBuilder, DAValidation"/>
+      </expressionBuilders>
+    </compilation>
+  </system.web>
+</configuration>

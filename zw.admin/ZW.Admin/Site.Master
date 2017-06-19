@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ZW.Admin.SiteMaster" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <AtomController:HeadContent runat="server"></AtomController:HeadContent>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <AtomController:Header runat="server"></AtomController:Header>
+
+        <section id="main">
+            <AtomController:SideMenu runat="server"></AtomController:SideMenu>
+            <section id="content">
+                <div class="container">
+                   <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </section>
+        </section>
+
+        <AtomController:PageLoader runat="server"></AtomController:PageLoader>
+
+        <AtomController:IEWarning runat="server"></AtomController:IEWarning>
+
+        <AtomController:Footer runat="server"></AtomController:Footer>
+    </form>
+</body>
+</html>
+
+
+
