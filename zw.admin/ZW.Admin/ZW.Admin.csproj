@@ -4917,6 +4917,7 @@
     <Content Include="Content\bs3\widget-templates.html" />
     <Content Include="Content\bs3\widgets.html" />
     <Content Include="Content\Cookies.js" />
+    <Content Include="Content\jquery.validate.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\bs4\404.html" />
     <Content Include="Content\bs4\alerts.html" />
@@ -11066,6 +11067,8 @@
     <Content Include="Page\Error\ErrorPage.aspx" />
     <Content Include="Page\System\Role.aspx" />
     <Content Include="Page\System\RoleUpdate.aspx" />
+    <Content Include="Page\System\User.aspx" />
+    <Content Include="Page\System\UserAdd.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -11191,6 +11194,20 @@
     </Compile>
     <Compile Include="Page\System\RoleUpdate.aspx.designer.cs">
       <DependentUpon>RoleUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\System\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\System\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\System\UserAdd.aspx.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\System\UserAdd.aspx.designer.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

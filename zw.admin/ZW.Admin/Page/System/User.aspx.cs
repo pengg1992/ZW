@@ -9,20 +9,20 @@ using System.Web.UI.WebControls;
 
 namespace ZW.Admin.Page.System
 {
-    public partial class Role : BasePage
+    public partial class User : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                
+
             }
 
             //从配置文件获取分页显示
             AspNetPager1.PageSize = ZW.Util.ConfigHelper.GetConfigInt("PageSize");
 
             //从数据库获取数据总数
-            AspNetPager1.RecordCount = new ZW.BLL.Role().GetRecordCount(GetSearchStr());
+            AspNetPager1.RecordCount = new ZW.BLL.SystemUser().GetRecordCount(GetSearchStr());
         }
 
         // 数据显示where条件
@@ -30,8 +30,8 @@ namespace ZW.Admin.Page.System
         protected string GetSearchStr()
         {
             string where = "1=1";
-            if (this.search_roleName.Text.Trim() != string.Empty)
-                where += " and roleName like '%" + this.search_roleName.Text.Trim() + "%' ";
+            if (this.search_UserName.Text.Trim() != string.Empty)
+                where += " and UserName like '%" + this.search_UserName.Text.Trim() + "%' ";
 
             return where;
         }
@@ -41,10 +41,10 @@ namespace ZW.Admin.Page.System
         {
             //判断是否搜索
             string where = "1=1";
-            if (this.search_roleName.Text.Trim() != string.Empty)
-                where += " and roleName like '%"+ this.search_roleName.Text.Trim() + "%' ";
+            if (this.search_UserName.Text.Trim() != string.Empty)
+                where += " and UserName like '%" + this.search_UserName.Text.Trim() + "%' ";
 
-            this.RptList.DataSource = new ZW.BLL.Role().GetListByPage(GetSearchStr(), "id desc", AspNetPager1.StartRecordIndex, AspNetPager1.EndRecordIndex);
+            this.RptList.DataSource = new ZW.BLL.SystemUser().GetListByPage(GetSearchStr(), "id desc", AspNetPager1.StartRecordIndex, AspNetPager1.EndRecordIndex);
             RptList.DataBind();
         }
 
@@ -60,22 +60,22 @@ namespace ZW.Admin.Page.System
             if (e.CommandName == "delete")
             {
                 int deleteId = Convert.ToInt32(e.CommandArgument);
-                new ZW.BLL.Role().Delete(deleteId);
-               
+                new ZW.BLL.SystemUser().Delete(deleteId);
+
                 ClientScript.RegisterStartupScript(GetType(), "message", "<script>swal('成功啦!', '操作成功', 'success').then(function(){window.location.replace('Role')});</script>");
             }
-            else if (e.CommandName == "edit")
+            if (e.CommandName == "edit")
             {
                 string updateId = e.CommandArgument.ToString();
-                Response.Redirect("RoleUpdate?id="+ updateId);
+                Response.Redirect("UserAdd?id=" + updateId);
             }
             else if (e.CommandName == "detail")
             {
                 string detailId = e.CommandArgument.ToString();
-                Response.Redirect("RoleUpdate?id=" + detailId+"&detail=1");
+                Response.Redirect("UserAdd?id=" + detailId + "&detail=1");
             }
         }
-        
+
         //点击搜索重新加载数据
         protected void btn_search_Click(object sender, EventArgs e)
         {
@@ -88,11 +88,11 @@ namespace ZW.Admin.Page.System
         /// <param name="e"></param>
         protected void btn_export_Click(object sender, EventArgs e)
         {
-            DataTable dt = new ZW.BLL.Role().GetList(GetSearchStr()).Tables[0];
+            DataTable dt = new ZW.BLL.SystemUser().GetList(GetSearchStr()).Tables[0];
             //dt.Columns["Id"].ColumnName = "编码";
             //dt.Columns["RoleName"].ColumnName = "角色名称";
             dt.Columns.RemoveAt(2);
-            string[] oldColumn =  new string[2] { "Id","RoleName"};
+            string[] oldColumn = new string[2] { "Id", "RoleName" };
             string[] newColumn = new string[2] { "编号", "角色名称" };
             //ZW.Util.NPOIHelper.Export(dt,"角色列表","角色列表.xls",oldColumn,newColumn);
             ZW.Util.NPOIHelper.ExportByWeb(dt, "角色列表", "角色列表.xls");
@@ -114,8 +114,25 @@ namespace ZW.Admin.Page.System
 
                 }
             }
-            new ZW.BLL.Role().DeleteList(idList.Trim(','));
+            new ZW.BLL.SystemUser().DeleteList(idList.Trim(','));
             ClientScript.RegisterStartupScript(GetType(), "message", "<script>swal('成功啦!', '操作成功', 'success').then(function(){window.location.replace('Role')});</script>");
         }
+
+
+        //格式化用户帐号状态
+        protected string status(object statusNum)
+        {
+            string flag = statusNum.ToString();
+
+            if (flag=="1")
+            {
+                return "正常";
+            }
+         
+                return "冻结";
+
+            
+        }
+
     }
 }

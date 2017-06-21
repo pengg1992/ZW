@@ -138,14 +138,19 @@ namespace ZW.DAL
 			
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("select  top 1 Id,RoleName,MoudleProperties from Role ");
-			strSql.Append(" where Id=@Id");
-			SqlParameter[] parameters = {
-					new SqlParameter("@Id", SqlDbType.Int,4)
-			};
-			parameters[0].Value = Id;
+
+                //strSql.Append(" where Id=@Id");
+                //SqlParameter[] parameters = {
+                //    new SqlParameter("@Id", SqlDbType.Int,4)
+                //};
+        
+                //parameters[0].Value = Id;
+
+			
 
 			ZW.Model.Role model=new ZW.Model.Role();
-			DataSet ds=DbHelperSQL.Query(strSql.ToString(),parameters);
+			//DataSet ds=DbHelperSQL.Query(strSql.ToString(),parameters);
+			DataSet ds=DbHelperSQL.Query(strSql.ToString());
 			if(ds.Tables[0].Rows.Count>0)
 			{
 				return DataRowToModel(ds.Tables[0].Rows[0]);
@@ -195,6 +200,8 @@ namespace ZW.DAL
 			}
 			return DbHelperSQL.Query(strSql.ToString());
 		}
+
+
 
 		/// <summary>
 		/// 获得前几行数据
@@ -264,7 +271,21 @@ namespace ZW.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+        //获取RoleName
+        public DataSet GetRoleName(string strWhere)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("SELECT RoleName FROM Role");
+            if (strWhere.Trim() != "")
+            {
+                strSql.Append("WHERE" + strWhere);
+
+            }
+
+            return DbHelperSQL.Query(strSql.ToString());
+
+        }
+        /*
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -289,10 +310,10 @@ namespace ZW.DAL
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}*/
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        #endregion  ExtensionMethod
+    }
 }
 

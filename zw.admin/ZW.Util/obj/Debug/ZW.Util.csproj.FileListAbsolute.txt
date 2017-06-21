@@ -21,3 +21,26 @@ C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Util\bi
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Util\bin\Debug\NPOI.OpenXml4Net.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Util\bin\Debug\NPOI.OpenXmlFormats.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Util\bin\Debug\NPOI.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\ZW.Util.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\ZW.Util.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.Core.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\itextsharp.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\log4net.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\NPOI.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\NPOI.OOXML.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\NPOI.OpenXml4Net.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Quartz.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\ThoughtWorks.QRCode.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.Core.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Common.Logging.Core.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\NPOI.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Quartz.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\bin\Debug\Quartz.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\obj\Debug\ZW.Util.csprojResolveAssemblyReference.cache
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\obj\Debug\ZW.Util.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Util\obj\Debug\ZW.Util.pdb

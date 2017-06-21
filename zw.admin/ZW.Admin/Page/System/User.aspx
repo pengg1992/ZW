@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Role.aspx.cs" Inherits="ZW.Admin.Page.System.Role" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="ZW.Admin.Page.System.User" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    
+
     <div class="card">
         <div class="card-header">
             <h2>角色管理</h2>
@@ -12,7 +12,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="RoleUpdate">
+                    <a href="UserAdd">
                         <i class="zmdi zmdi-plus"></i>
                     </a>
                 </li>
@@ -35,7 +35,7 @@
                 <div class="col-sm-3">
                     <div class="input-group">
                         <div class="fg-line">
-                            <asp:TextBox runat="server" ID="search_roleName" CssClass="form-control" placeholder="角色名称"></asp:TextBox>
+                            <asp:TextBox runat="server" ID="search_UserName" CssClass="form-control" placeholder="角色名称"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,10 @@
                                 </label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                             <th style="width: 10%">编号</th>
-                            <th >角色名称</th>
+                            <th >登陆账号</th>
+                            <th >用户名称</th>
+                            <th >所属角色</th>
+                            <th >用户状态</th>
                             <th style="width: 25%">操作</th>
                         </tr>
                 </HeaderTemplate>
@@ -68,12 +71,16 @@
                     <tr>
                         <td>
                             <label class="checkbox checkbox-inline m-r-20">
-                                <input type="checkbox" class="cb_checkitem" id="CheckBox" runat="server" value='<%# Eval("Id") %>'>
+                                <input type="checkbox" class="cb_checkitem" id="CheckBox" runat="server" value='<%# Eval("Id") %>'/>
                                 <i class="input-helper"></i>
                             </label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td><%#DataBinder.Eval(Container.DataItem,"Id")%></td>
+                        <td><%#DataBinder.Eval(Container.DataItem,"row")%></td>
+                        <td><%#DataBinder.Eval(Container.DataItem,"UserName")%></td>
+                        <td><%#DataBinder.Eval(Container.DataItem,"Name")%></td>
                         <td><%#DataBinder.Eval(Container.DataItem,"RoleName")%></td>
+<%--                        <td><%#DataBinder.Eval(Container.DataItem,"status").ToString()=="1"?"x":"asd"%></td>--%>
+                        <td><%#status(Eval("status"))%></td>
                         <td>
                             <asp:LinkButton ID="delete" runat="server"  CssClass="btn btn-danger waves-effect"
                                  OnClientClick="return confirm('数据删除不可恢复，确定删除?')"
@@ -111,5 +118,5 @@
 
     </div>
 
-
+  
 </asp:Content>

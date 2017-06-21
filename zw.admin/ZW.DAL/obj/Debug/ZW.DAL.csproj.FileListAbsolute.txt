@@ -6,3 +6,11 @@ C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.DAL\bin
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\bin\Debug\ZW.DAL.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\bin\Debug\ZW.DAL.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\bin\Debug\Maticsoft.DBUtility.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\bin\Debug\ZW.Model.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\bin\Debug\ZW.Model.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.csprojResolveAssemblyReference.cache
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.DAL\obj\Debug\ZW.DAL.pdb

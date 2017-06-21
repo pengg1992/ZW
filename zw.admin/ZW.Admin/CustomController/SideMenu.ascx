@@ -34,7 +34,7 @@
                 <li><a id="1" href="dashboards/analytics.html" class="menu-item">模块管理</a></li>
                 <li><a id="2" href="/Page/System/Role" class="menu-item">角色管理</a></li>
                 <li><a id="3" href="dashboards/analytics.html" class="menu-item">权限管理</a></li>
-                <li><a id="4" href="dashboards/school.html" class="menu-item">人员管理</a></li>
+                <li><a id="4" href="/Page/System/User" class="menu-item">人员管理</a></li>
             </ul>
         </li>
         

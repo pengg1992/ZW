@@ -15,6 +15,11 @@ namespace ZW.Model
         private string _pwd;
         private string _name;
         private bool _isadmin;
+        private int? _roleid;
+        private DateTime? _createtime;
+        private DateTime? _lasttime;
+        private string _lastip = "";
+        private bool _status;
         /// <summary>
         /// 
         /// </summary>
@@ -54,6 +59,46 @@ namespace ZW.Model
         {
             set { _isadmin = value; }
             get { return _isadmin; }
+        }
+        /// <summary>
+        /// 角色ID
+        /// </summary>
+        public int? RoleId
+        {
+            set { _roleid = value; }
+            get { return _roleid; }
+        }
+        /// <summary>
+        /// 创建用户时间
+        /// </summary>
+        public DateTime? CreateTime
+        {
+            set { _createtime = value; }
+            get { return _createtime; }
+        }
+        /// <summary>
+        /// 最后登陆时间
+        /// </summary>
+        public DateTime? LastTime
+        {
+            set { _lasttime = value; }
+            get { return _lasttime; }
+        }
+        /// <summary>
+        /// 最后登录IP
+        /// </summary>
+        public string LastIp
+        {
+            set { _lastip = value; }
+            get { return _lastip; }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool status
+        {
+            set { _status = value; }
+            get { return _status; }
         }
         #endregion Model
 

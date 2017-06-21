@@ -5,3 +5,10 @@ C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Model\o
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Model\obj\Debug\ZW.Model.pdb
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Model\bin\Debug\DAValidation.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.Model\bin\Debug\DAValidation.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\bin\Debug\ZW.Model.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\bin\Debug\ZW.Model.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\bin\Debug\DAValidation.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\bin\Debug\DAValidation.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\obj\Debug\ZW.Model.csprojResolveAssemblyReference.cache
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\obj\Debug\ZW.Model.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.Model\obj\Debug\ZW.Model.pdb

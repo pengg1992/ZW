@@ -26,3 +26,31 @@ C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.BLL\obj
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.BLL\bin\Debug\NPOI.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.BLL\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\Users\Administrator\documents\visual studio 2017\Projects\zw.admin\ZW.BLL\bin\Debug\NPOI.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.BLL.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.BLL.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Maticsoft.Common.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.DAL.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.Model.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.Util.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Maticsoft.DBUtility.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\NPOI.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\itextsharp.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ThoughtWorks.QRCode.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Quartz.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\log4net.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.Core.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.DAL.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.Model.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\ZW.Util.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\NPOI.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Quartz.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Quartz.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.Core.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.Core.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.pdb
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\bin\Debug\Common.Logging.xml
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\obj\Debug\ZW.BLL.csprojResolveAssemblyReference.cache
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\obj\Debug\ZW.BLL.dll
+E:\user1\zw-admin-webform\zw.admin\ZW.BLL\obj\Debug\ZW.BLL.pdb

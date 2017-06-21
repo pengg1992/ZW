@@ -27,6 +27,7 @@
         <script src="/Content/bs3/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="/Content/bs3/vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
         <script src="/Content/bs3/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="/Content/jquery.validate.js"></script>
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
             <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>

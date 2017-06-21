@@ -333,7 +333,7 @@ namespace ZW.Util
         /// </summary>
         /// <param name="_value"></param>
         /// <returns>返回正确的整数ID，失败返回0</returns>
-        public static int StrToId(string _value)
+        public static int StrToId(string _value)        
         {
             if (IsNumberId(_value))
                 return int.Parse(_value);

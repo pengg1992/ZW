@@ -22,6 +22,7 @@ namespace ZW.BLL
 			return dal.Exists(Id);
 		}
 
+    
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
@@ -153,18 +154,25 @@ namespace ZW.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        //获取RoleName
+        public DataSet GetRoleName(string strWhere)
+        {
+            return dal.GetRoleName(strWhere);
+        }
+
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+
+        #endregion  ExtensionMethod
+    }
 }
 

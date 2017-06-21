@@ -37,19 +37,22 @@ namespace ZW.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into SystemUser(");
-            strSql.Append("UserName,Pwd,Name,IsAdmin)");
+            strSql.Append("UserName,Pwd,Name,IsAdmin,CreateTime)");
             strSql.Append(" values (");
-            strSql.Append("@UserName,@Pwd,@Name,@IsAdmin)");
+            strSql.Append("@UserName,@Pwd,@Name,@IsAdmin,@CreateTime)");
             strSql.Append(";select @@IDENTITY");
             SqlParameter[] parameters = {
                     new SqlParameter("@UserName", SqlDbType.VarChar,200),
                     new SqlParameter("@Pwd", SqlDbType.VarChar,50),
                     new SqlParameter("@Name", SqlDbType.VarChar,50),
-                    new SqlParameter("@IsAdmin", SqlDbType.Bit,1)};
+                    new SqlParameter("@RoleId", SqlDbType.Int,4),
+                    new SqlParameter("@CreateTime", SqlDbType.DateTime),
+            };
             parameters[0].Value = model.UserName;
             parameters[1].Value = model.Pwd;
             parameters[2].Value = model.Name;
-            parameters[3].Value = model.IsAdmin;
+            parameters[3].Value = model.RoleId;
+            parameters[3].Value = model.CreateTime;
 
             object obj = DbHelperSQL.GetSingle(strSql.ToString(), parameters);
             if (obj == null)
@@ -221,6 +224,9 @@ namespace ZW.DAL
             return DbHelperSQL.Query(strSql.ToString());
         }
 
+
+        //获取Role
+
         /// <summary>
         /// 获得前几行数据
         /// </summary>
@@ -251,6 +257,7 @@ namespace ZW.DAL
             strSql.Append("select count(1) FROM SystemUser ");
             if (strWhere.Trim() != "")
             {
+             
                 strSql.Append(" where " + strWhere);
             }
             object obj = DbHelperSQL.GetSingle(strSql.ToString());
@@ -271,6 +278,7 @@ namespace ZW.DAL
             StringBuilder strSql = new StringBuilder();
             strSql.Append("SELECT * FROM ( ");
             strSql.Append(" SELECT ROW_NUMBER() OVER (");
+            //SELECT SystemUser.Id,SystemUser.UserName,SystemUser.Name,Role.RoleName FROM  SystemUser Left join Role on Role.Id = SystemUser.RoleId
             if (!string.IsNullOrEmpty(orderby.Trim()))
             {
                 strSql.Append("order by T." + orderby);
@@ -284,8 +292,12 @@ namespace ZW.DAL
             {
                 strSql.Append(" WHERE " + strWhere);
             }
+            
             strSql.Append(" ) TT");
+            strSql.Append(" LEFT JOIN Role ON Role.Id=TT.RoleId");
             strSql.AppendFormat(" WHERE TT.Row between {0} and {1}", startIndex, endIndex);
+            
+
             return DbHelperSQL.Query(strSql.ToString());
         }
 
